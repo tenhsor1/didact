@@ -1,0 +1,21 @@
+{
+  "name": "didact",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tenhsor1/didact",
+  "author": "Ricardo Romo <ricardo.romo.ramirez@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-env": "^7.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "start": "http-server"
+  }
+}
