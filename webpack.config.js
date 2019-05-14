@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 module.exports = {
-    entry: './lib/test.js',
+    entry: './test.js',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'app.bundle.js'
@@ -12,7 +12,7 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['@babel/preset-env']
+                    presets: ['@babel/preset-env', '@babel/preset-react']
                 }
             }
         ]
