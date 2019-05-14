@@ -21,7 +21,7 @@
   },
   "scripts": {
     "webpack": "webpack",
-    "start": "http-server",
+    "start": "npm run webpack && http-server",
     "eslint": "eslint lib/**.js",
     "prettier": "prettier es5 --write \"{lib/**.js,test.js}\""
   },
