@@ -27,7 +27,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm prettier && npm eslint"
+      "pre-commit": "npm run prettier && npm run eslint"
     }
   }
 }
