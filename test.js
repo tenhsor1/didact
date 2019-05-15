@@ -29,9 +29,9 @@ class Story extends Didact.Component {
     super(props);
     this.state = { likes: Math.ceil(Math.random() * 100) };
   }
-  like () {
+  like() {
     this.setState({
-      likes: this.state.likes + 1,
+      likes: this.state.likes + 1
     });
   }
   render() {
@@ -39,10 +39,13 @@ class Story extends Didact.Component {
     const { likes } = this.state;
     return (
       <li>
-        <button onClick={e => this.like()}>{likes}<b>❤</b></button>
+        <button onClick={e => this.like()}>
+          {likes}
+          <b>❤</b>
+        </button>
         <a href={url}>{name}</a>
       </li>
-    )
+    );
   }
 }
 
@@ -58,7 +61,7 @@ class App extends Didact.Component {
           })}
         </ul>
       </div>
-    )
+    );
   }
 }
 
